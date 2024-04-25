@@ -1,0 +1,90 @@
+
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		 div#titleuenf {
+            background: url("{% static "homepage/EmbeddedImage.jpg" %}");  
+            /*width: 100%;*/
+            width: 970px;
+            height: auto;
+            /*height: 180px;*/
+            margin: 10px auto;
+           /* margin-left: 210px;  correcao para a sidebar nao ficar em cima do texto no redimensionamento */
+        } 
+        div.biocomp_logo_panel {
+            width:50%;
+            /*height: 630px;*/
+            /*background: red;*/
+            float: left;
+        }
+        div.uenf_logo_panel {
+            /*margin-left: 40px;*/
+            /*margin:  40px;*/
+            display: inline-block;
+            /*height: 630px;*/
+            width: 50%;
+            /*padding: 10px;*/
+             /*min-width:40vw;*/
+            /*background: pink;*/
+        }
+        div#footer {
+            /*background: green;*/
+            /*width: 100%;*/
+            width: 970px;
+            height: auto;
+            /*height: 180px;*/
+            margin: 0 auto;
+        }
+		section {
+            /*width: 100%;*/
+            width: 970px;
+            height: auto;
+            /*background: aqua;*/
+            margin: auto;
+            padding: 0px;
+           /* margin-left: 210px;  correcao para a sidebar nao ficar em cima do texto no redimensionamento */
+        }
+
+        {% block style %} {% endblock %}
+        {% block sidebar_style %} {% endblock %}
+  
+    </style>
+    <head>
+	   <!-- Meta tags Obrigatórias -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+	    <!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<title>{% block title %}  {% endblock %}</title>
+	</head>
+	<body>
+		{% block sidebar %}  {% endblock %}
+		<div id='titleuenf' class="shadow p-3 mb-1 rounded" >
+			<div class="biocomp_logo_panel">
+				<a href="{% url 'index' %}" > <img src="{% static "homepage/biocomp.png" %}" alt="biocomp_logo" style='height: 45%; width: 45%; object-fit: contain'>
+			</div>
+			<div class="uenf_logo_panel">
+				<a href="https://uenf.br" > <img src="{% static "homepage/uenf.jpg" %}" alt="uenf_logo" style='height: 30%; width: 30%; object-fit: contain; float: right'></a>
+			</div>
+
+		</div>
+		<div id="body">
+			<section class="shadow p-3 mb-1 bg-white rounded">						{% block content %} {% endblock %}
+			</section>
+		</div>
+		<div id="footer" class="shadow p-3 mb-5  rounded">
+			<pre>
+				Universidade Estadual do Norte Fluminense Darcy Ribeiro (UENF)
+				Centro de Biociência e Biotecnologia (CBB)
+				Laboratório de Química e Função de Proteínas e Peptídeos (LQFPP)
+				Av. Alberto Lamego, 2000 - P5 - Parque Califórnia
+				Campos dos Goytacazes, Rio de Janeiro - Brasil		
+			</pre>
+		</div>
+	</body>
+</html>
+
+

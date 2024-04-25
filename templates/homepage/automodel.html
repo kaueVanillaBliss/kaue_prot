@@ -1,0 +1,67 @@
+{% extends "automodel_base.html" %}
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+	<style type="text/css">
+			{% block style %}
+	        div.automodel_text_panel {
+	            width:50%;
+	            height: 430px;
+	       /*     background: red;*/
+	            float: left;
+	        }
+	        div.automodel_image_panel {
+	            /*margin-left: 40px;*/
+	            /*margin:  40px;*/
+	            display: inline-block;
+	            height: 430px;
+	            width: 50%;
+	            /*padding: 10px;*/
+	             /*min-width:40vw;*/
+	         /*   background: pink;*/
+	        }
+	        {% endblock %}
+	</style>
+	<head>
+		{% block title %} AutoModel {% endblock %}
+	</head>	
+	<body> 
+		{% block content %}
+				<div >
+					<h1><b>Welcome to AutoModel</b></h1>
+					<p style='text-align: justify;'>AutoModel is a semi-automatic service that allows predict the protein structure by homology modeling using an intuitive interface use and a with greater control of experimental parameters. As a differential compared to other online modeling systems, the Automodel has a module of models analysis, based on refinement of loop regions. Moreover, AutoModel reconizes and model heteroatoms family (Zn, Cl, Mg, etc).</p>
+				</div>
+				<div class="automodel_text_panel">
+					<p>Features of AutoModel:</p>
+					<ul>
+						<li>Easy to use graphical interface.</li>
+						<li>Suport full Homology Modeling Pipeline: </li>
+						<ul>
+							<li>Searching structural templates;</li>
+							<li>Sequence alignments;</li>
+							<li>Protein modelling;</li>
+							<li>Model refinement;</li>
+							<li>Loop refinement.</li>
+						</ul>
+						<li>Suports modeling HETEROATOMS family.</li>
+						<li>AutoModel uses Modeller software as modelling engine.</li>
+						<li>Assesment made by Procheck.</li>
+						<li>In the end of modellig, the user can made a loop refinement of generated model.</li>
+						<li>Entire developed using the Python programing language.</li>
+						<li>AutoModel uses internet architecture for lower computational cost.</li>
+					</ul>
+
+				</div>
+				<div class="automodel_image_panel">
+					<a href="{% static "homepage/automodel_full_screen.png" %}" >
+						<img src="{% static "homepage/automodel_full_screen.png" %}" alt="fig_sphere" style='height: 100%; width: 100%; object-fit: contain;' class="center">
+					</a>
+				</div>
+				<div>
+					<p><small>*AutoModel is maintained by João Luiz de Almeida Filho and Jorge Hernandez Fernandez at the Laboratório de Química e Função de Proteínas e Peptídeos in the Universidade Estadual do Norte Fluminense Darcy Ribeiro.</small></p>
+				</div>
+
+		{% endblock %}
+	</body>
+</html>

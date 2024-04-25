@@ -1,0 +1,54 @@
+{% extends "automodel_base.html" %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		{% block title %} AutoModel {% endblock %}
+	</title>
+</head>
+<body>
+		{% block content %}
+		<div>
+			<h2>Download</h2>
+			<p>Get AutoModel multiarch <a href="https://www.dropbox.com/s/rtse1y528nue4t1/automodel-offline.zip?dl=1" >here!</a></p>
+			<p>Instalation Instruction (Ubuntu Linux 16.04):</p>
+			<br>
+			<p>Order to use the AutoModel, the following components are required:</p>
+			<ul>
+				<li>Python (Already included in Ubuntu);</li>
+				<li>RPyC Library (Library for server communication);</li>
+				<li>WxPython Library (Graphics rendering library);</li>
+				<li>VMD.</li>
+			</ul>
+
+			<p><b><u>RPyC Installation:</u></b></p>
+			<p>Open the terminal and run the following commands:</p>
+			<pre>
+				sudo apt-get install python-pip
+				sudo easy_install rpyc==3.3.0
+			</pre>
+
+			<p><b><u>WxPython Installation:</u></b></p>
+			<pre>
+				sudo add-apt-repository ppa:nilarimogard/webupd8
+				sudo apt-get update
+				sudo apt-get install python-wxgtk2.8 wx2.8-i18n
+			</pre>
+			<p><b><u>VMD Installation:</u></b></p>
+			<p>Download the VMD here, unpack it and enter in his folder using the terminal. Enter the following commands:</p>
+			<pre>
+				./configure
+				cd src
+				sudo make install
+			</pre>
+
+			<p>After installing these components, just unzip the automodel-client (preferably in home folder) and run the file automodel.sh (2x clicking on or by the terminal with the command sh automodel.sh).</p>
+
+		</div>
+
+		{% endblock %}
+
+
+</body>
+</html>

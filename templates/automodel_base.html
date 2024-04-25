@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		 div#titleuenf {
+         {% block sidebar_style %}
+         div#titleuenf {
+            background: url("{% static "homepage/EmbeddedImage.jpg" %}");  
+            /*width: 100%;*/
+            width: 970px;
+            height: auto;
+            /*height: 180px;*/
+            margin: 10px auto;
+            margin-left: 210px; /* correcao para a sidebar nao ficar em cima do texto no redimensionamento */
+        	} 
+        	section {
+            /*width: 100%;*/
+            width: 970px;
+            height: auto;
+            /*background: aqua;*/
+            margin: auto;
+            padding: 0px;
+            margin-left: 210px; /* correcao para a sidebar nao ficar em cima do texto no redimensionamento */
+        }
+	        .sidenav {
+			  height: 100%; /* Full-height: remove this if you want "auto" height */
+			  width: 200px; /* Set the width of the sidebar */
+			  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+			  z-index: 1; /* Stay on top */
+			  top: 0; /* Stay at the top */
+			  left: 0;
+			  background-color: #999; /* Black */
+			  overflow-x: hidden; /* Disable horizontal scroll */
+			  padding-top: 0px;
+			}
+
+			ul.no-bullets {
+			  list-style-type: none; /* Remove bullets */
+			  padding: 0px;  /*Remove padding */
+			  margin: 0; /* Remove margins */
+			}
+			ul.no-bulletsLevel2 {
+			  list-style-type: none; /* Remove bullets */
+			  padding: 2;  /*Remove padding */
+			  margin: 0; /* Remove margins */
+			}
+		{% endblock %}
+
+    </style>
+ 
+	<body>
+		{% block sidebar %} 
+		<!-- Side navigation -->
+		<div class="sidenav">
+		<ul class="no-bullets">
+		  <li><b>Download AutoModel</b></li>
+		  <ul class="no-bulletsLevel2">
+
+			  <a href="{% url 'automodel_client_download' %}" ><li>Download AutoModel Client</li></a>
+			  <a href="{% url 'automodel_server_download' %}" ><li>Download AutoModel Server</li></a>
+		  </ul>
+		  <a href="{% url 'automodel_tutorial' %}" ><li><b>Basic Tutorial</b></li></a>
+		</ul>
+		</div>
+		{% endblock %}
+	
+	</body>
+</html>
+
+

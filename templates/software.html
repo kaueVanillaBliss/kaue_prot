@@ -1,0 +1,71 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototipo1</title>
+    <link rel="stylesheet" href="{% static 'software.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather&display=swap">
+</head>
+</head>
+
+
+<body>
+    <h1 class="with-image">
+        <img src="{% static 'biocomp-removebg-preview.png' %}">
+    </h1>
+    <div class="separator"></div>
+
+    <div class="navbar">
+        <a href="{% url 'index' %}">Início</a>
+        <a href="{% url 'software' %}">Softwares</a>
+        <a href="{% url 'quemsomos' %}">Quem somos</a>
+        <a href="{% url 'galeria' %}">Galeria</a>
+        <a href="{% url 'pesquisa' %}">Pesquisa</a>
+        <a href="{% url 'contato' %}">Contato</a>
+        <a href="">Idioma</a>
+    </div>
+
+    <body>
+        <div class="table-container">
+            <div class="row">
+                <div class="cell">
+                    <h2>HTP SurflexDock</h2>
+                 <a href="https://htpsurflexdock.biocomp.uenf.br/">
+                <img src="{% static 'htp_screen.png' %}" alt="Descrição da imagem">
+                    </a>
+                    <p>HTP SurflexDock is a web tool that allows performing Structure Base Virtual Screening experiments using the ensemble docking protocol. Beside that, HTP SurflexDock allows a full qualitative analisys of ranked compounds by analysis of the interactions of promising compounds with receptor and so filtering those compounds that will lead to future drug discovery stages.</p>
+                    
+                </div>
+                <div class="cell">
+                    <h2>AutoModel</h2>
+                    <a href="{% url 'automodel' %}" >
+                    <img src="{% static 'automodel5.png' %}">
+                    </a>
+                    <p>AutoModel is a semi-automatic online service that allows the user to make modeling with greater control of parameters using an intuitive interface use.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+
+
+
+    
+    <div class="separator"></div>
+
+
+<div class="fim"> 
+    <ul>
+        <li>Universidade Estadual do Norte Fluminense Darcy Ribeiro (UENF)</li>
+        <li>Centro de Biociência e Biotecnologia (CBB)</li>
+        <li>Laboratório de Química e Função de Proteínas e Peptídeos (LQFPP)</li>
+        <li>Av. Alberto Lamego, 2000 - P5 - Parque Califórnia</li>
+        <li>Campos dos Goytacazes, Rio de Janeiro - Brasil</li>
+    </ul>
+  </div>
+
+</body>
+</html>

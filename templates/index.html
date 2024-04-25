@@ -1,0 +1,52 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototipo2</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather&display=swap">
+</head>
+<body>
+    <h1 class="with-image">
+        <img src="{% static 'biocomp-removebg-preview.png' %}">
+    </h1>
+    <div class="separator"></div>
+
+    <div class="navbar">
+        <a href="{% url 'index' %}">Início</a>
+        <a href="{% url 'software' %}">Softwares</a>
+        <a href="{% url 'quemsomos' %}">Quem somos</a>
+        <a href="{% url 'galeria' %}">Galeria</a>
+        <a href="{% url 'pesquisa' %}">Pesquisa</a>
+        <a href="{% url 'contato' %}">Contato</a>
+        <a href="">Idioma</a>
+    </div>
+
+    <div class="container">
+        <h1>LQFPP</h1>
+        <img src="{% static 'interacao.webp' %}" alt="Interacao">
+
+        <p>
+            Esta página contém o software de bioinformática estrutural desenvolvido pelo Laboratório de Química e Função de Proteínas e Peptídeos (LQFPP) na Universidade Estadual do Norte Fluminense (UENF). Este software é usado para determinar a estrutura de proteínas e analisar a interação com pequenos ligantes. Todo o software presente aqui é aberto ao público e pode ser utilizado gratuitamente pela comunidade acadêmica.
+        </p>
+        <p>
+            Esta página contém o software de bioinformática estrutural desenvolvido pelo Laboratório de Química e Função de Proteínas e Peptídeos (LQFPP) na Universidade Estadual do Norte Fluminense (UENF). Este software é usado para determinar a estrutura de proteínas e analisar a interação com pequenos ligantes. Todo o software presente aqui é aberto ao público e pode ser utilizado gratuitamente pela comunidade acadêmica.
+        </p>
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="fim">
+        <ul>
+            <li>Universidade Estadual do Norte Fluminense Darcy Ribeiro (UENF)</li>
+            <li>Centro de Biociência e Biotecnologia (CBB)</li>
+            <li>Laboratório de Química e Função de Proteínas e Peptídeos (LQFPP)</li>
+            <li>Av. Alberto Lamego, 2000 - P5 - Parque Califórnia</li>
+            <li>Campos dos Goytacazes, Rio de Janeiro - Brasil</li>
+        </ul>
+    </div>
+
+</body>
+</html>
