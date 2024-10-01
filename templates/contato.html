@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather&display=swap">
 </head>
 <body>
-    <h1 class="with-image">
-        <img src="{% static 'biocomp-removebg-preview.png' %}">
     </h1>
     <div class="separator"></div>
 
@@ -18,24 +16,33 @@
         <a href="{% url 'index' %}">Início</a>
         <a href="{% url 'software' %}">Software</a>
         <a href="{% url 'quemsomos' %}">Quem somos</a>
-        <a href="{% url 'galeria' %}">Galeria</a>
-        <a href="{% url 'pesquisa' %}">Pesquisa</a>
         <a href="{% url 'contato' %}">Contato</a>
-        <a href="">Idioma</a>
+        <li style="float:right"><a class="active"" href="{% url 'index' %}"> <img src="{% static 'biocomp-removebg-preview.png' %}" style="width: 80px; height: auto;"></a></li>
     </div>
 
-    <section class="contact-section">
-        <h2>Contatos</h2>
-        <div class="contact-table">
-            <div class="contact-row">
-                <div class="contact-cell"><img class="social-icon" src="{% static 'instagram.jpg' %}" alt="Instagram"></div>
-                <div class="contact-cell"><a href="#">@Biocomp_Uenf</a></div>
-            </div>
-            <div class="contact-row">
-                <div class="contact-cell"><img class="social-icon" src="{% static 'Rn.png' %}" alt="Twitter"><a href="twitter.com">Localização - MAPS</a></div>
-            </div>
-        </div>
+    <section class="contact-info">
+        <h1>Contate o Laboratório!</h1>
+        <p><strong>Endereço:</strong> Av. Alberto Lamego, 2000 - Parque California, Campos dos Goytacazes - RJ, 28013-602</p>
+        <p><strong>Telefone:</strong> (22) 998466003</p>
+        <p><strong>E-mail:</strong>lqfpp@uenf.br</p>
     </section>
+
+    <section class="contact-form">
+        <h2>Envie uma mensagem!</h2>
+        <form action="#" method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+
+
 
     <div class="fim">
         <ul>
@@ -44,6 +51,7 @@
             <li>Laboratório de Química e Função de Proteínas e Peptídeos (LQFPP)</li>
             <li>Av. Alberto Lamego, 2000 - P5 - Parque Califórnia</li>
             <li>Campos dos Goytacazes, Rio de Janeiro - Brasil</li>
+            <li><img src="{% static 'uenf.png' %}" style="width: 100px; height: auto;"></li>
         </ul>
     </div>
 </body>

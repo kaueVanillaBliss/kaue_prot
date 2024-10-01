@@ -47,6 +47,18 @@ def pesquisa(request):
     return render(request, 'pesquisa.html')
 def contato(request):
     return render(request, 'contato.html')
+def kaue(request):
+    return render(request, 'kaue.html')
+def karine(request):
+    return render(request, 'karine.html')
+def pablo(request):
+    return render(request, 'pablo.html')
+def jorge(request):
+    return render(request, 'jorge.html')
+def wanderson(request):
+    return render(request, 'wanderson.html')
+def joao(request):
+    return render(request, 'joao.html')
 
 def image_galeria(request):
     images = Image.objects.all()

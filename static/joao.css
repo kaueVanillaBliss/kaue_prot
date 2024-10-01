@@ -1,0 +1,139 @@
+p {
+    text-align: center;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    
+    
+}
+
+
+h1 {
+    text-align: center;
+    background-color:#edf2f9;
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.separator {
+    border-bottom: 2px solid #333; /* Barra horizontal com 2px de espessura e cor #333 */
+}
+
+
+
+/* Estilos para a barra de navegação horizontal */
+.navbar {
+    background-color: #3CB371; 
+    overflow: hidden;
+}
+
+/* Estilos para os links na barra de navegação */
+.navbar a {
+    float: left;
+    display: block;
+    color: black; /* Cor do texto */
+    text-align: center;
+    padding: 14px 10px; /* Ajuste o espaçamento vertical e horizontal aqui */
+    text-decoration: none;
+    margin: 0; /* Remova as margens padrão */
+}
+
+/* Estilos para os links quando hover */
+.navbar a:hover {
+    background-color:SeaGreen; /* Cor de fundo mais forte quando hover */
+}
+
+.fm {
+    background-color: #edf2f9;
+    padding: 40px 20px; /* Aumento do padding para mais espaço */
+    text-align: left; /* Alinhamento do texto para a esquerda para uma aparência mais padrão */
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.fm h1 {
+    text-align: center; /* Centralizando o título */
+    color: #333;
+    font-size: 28px; /* Tamanho ajustado para visibilidade */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+.fm p {
+    color: #666;
+    font-size: 16px; /* Tamanho de fonte ajustado */
+    margin-bottom: 20px; /* Espaço abaixo do parágrafo */
+}
+
+.fm address {
+    font-style: normal;
+    color: #333;
+    margin-bottom: 20px; /* Espaço abaixo do endereço */
+}
+
+.fm input, .fm textarea {
+    width: calc(100% - 20px); 
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px; /* Bordas mais arredondadas */
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    transition: border-color 0.3s; /* Transição suave para borda */
+}
+
+.fm input:hover, .fim textarea:hover {
+    border-color: #3CB371; /* Cor da borda ao passar o mouse */
+}
+
+.fm textarea {
+    height: 150px; /* Aumento da altura */
+}
+
+.fm button {
+    background-color: #3CB371;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px; /* Bordas arredondadas */
+    display: block; /* Faz o botão ocupar sua própria linha */
+    width: 100%; /* Botão estende-se pela largura total */
+    margin-top: 20px; /* Espaço antes do botão */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
+}
+
+.fm form {
+    max-width: 800px;
+    margin: 0 auto; /* Centraliza o formulário */
+    padding: 20px; /* Padding interno para o formulário */
+    background: #ffffff; /* Fundo branco para o formulário */
+    border-radius: 10px; /* Bordas arredondadas para o formulário */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra externa para o formulário */
+}
+
+.fim {
+    background-color: #edf2f9;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+}
+
+
+.fim ul {
+    list-style-type: none; /* Define o tipo de marcador como ponto preto */
+    padding-left: 0; /* Remove o espaçamento padrão do marcador */
+    margin: 0;
+}
+
+.fim li {
+    margin: 10px 0; /* Adiciona um espaçamento vertical entre os itens da lista */
+   
+}

@@ -12,8 +12,7 @@
 
 
 <body>
-    <h1 class="with-image">
-        <img src="{% static 'biocomp-removebg-preview.png' %}">
+
     </h1>
     <div class="separator"></div>
 
@@ -21,10 +20,8 @@
         <a href="{% url 'index' %}">Início</a>
         <a href="{% url 'software' %}">Softwares</a>
         <a href="{% url 'quemsomos' %}">Quem somos</a>
-        <a href="{% url 'galeria' %}">Galeria</a>
-        <a href="{% url 'pesquisa' %}">Pesquisa</a>
         <a href="{% url 'contato' %}">Contato</a>
-        <a href="">Idioma</a>
+        <li style="float:right"><a class="active"" href="{% url 'index' %}"> <img src="{% static 'biocomp-removebg-preview.png' %}" style="width: 80px; height: auto;"></a></li>
     </div>
 
     <body>
@@ -64,6 +61,7 @@
         <li>Laboratório de Química e Função de Proteínas e Peptídeos (LQFPP)</li>
         <li>Av. Alberto Lamego, 2000 - P5 - Parque Califórnia</li>
         <li>Campos dos Goytacazes, Rio de Janeiro - Brasil</li>
+        <li><img src="{% static 'uenf.png' %}" style="width: 100px; height: auto;"></li>
     </ul>
   </div>
 

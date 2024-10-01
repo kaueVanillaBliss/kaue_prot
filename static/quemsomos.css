@@ -48,37 +48,8 @@ body {
     padding: 20px;
 }
 
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
 
-.member {
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-}
 
-.member h2 {
-    margin-top: 0;
-    font-size: 18px;
-}
-
-.member p {
-    margin-bottom: 10px;
-    font-size: 14px;
-}
-
-.photo {
-    background-color: #f0f0f0;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    color: #999;
-}
 
 /* Estilos para o conteúdo principal */
 .content {

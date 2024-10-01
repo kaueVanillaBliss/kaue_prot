@@ -9,44 +9,122 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather&display=swap">
 </head>
 <body>
-    <h1 class="with-image">
-        <img src="{% static 'biocomp-removebg-preview.png' %}">
+        
+        
     </h1>
-    <div class="separator"></div>
-
     <div class="navbar">
-        <a href="{% url 'index' %}">Início</a>
-        <a href="{% url 'software' %}">Softwares</a>
-        <a href="{% url 'quemsomos' %}">Quem somos</a>
-        <a href="{% url 'galeria' %}">Galeria</a>
-        <a href="{% url 'pesquisa' %}">Pesquisa</a>
-        <a href="{% url 'contato' %}">Contato</a>
-        <a href="">Idioma</a>
-    </div>
+      <a href="{% url 'index' %}">Início</a>
+      <a href="{% url 'software' %}">Softwares</a>
+      <a href="{% url 'quemsomos' %}">Quem somos</a>
+      <a href="{% url 'contato' %}">Contato</a>
+      
+      <li style="float:right"><a class="active"" href="{% url 'index' %}"> <img src="{% static 'biocomp-removebg-preview.png' %}" style="width: 80px; height: auto;"></a></li>
+  </div>
 
-    <div class="container">
-        <h1>LQFPP</h1>
-        <img src="{% static 'interacao.webp' %}" alt="Interacao">
-
+  <div class="container">
+    <header>Pagina inicial</header>
+    <div class="articles">
+      <article>
+        <h1>Premiação no Confict!</h1>
+  
         <p>
-            Esta página contém o software de bioinformática estrutural desenvolvido pelo Laboratório de Química e Função de Proteínas e Peptídeos (LQFPP) na Universidade Estadual do Norte Fluminense (UENF). Este software é usado para determinar a estrutura de proteínas e analisar a interação com pequenos ligantes. Todo o software presente aqui é aberto ao público e pode ser utilizado gratuitamente pela comunidade acadêmica.
+            A aluna Karine Terra foi premiada em um prestigiado evento
+            de pesquisa chamado CONFICT (Conferência Internacional de
+            Ciência e Tecnologia), onde apresentou um trabalho inovador
+            que destacou-se entre diversos projetos de alto nível.
+            
+            Sua pesquisa, focada na função de peptídeos em processos
+            biológicos, demonstrou um avanço significativo na compreensão
+            das interações moleculares que ocorrem no corpo humano.
+            
+            A excelência da investigação conduzida por Karine não apenas
+            trouxe reconhecimento à sua dedicação, mas também reforçou a
+            importância de seu estudo para futuras aplicações em áreas como
+            biotecnologia e terapias avançadas.
+            
+            O prêmio no CONFICT representa o reconhecimento de sua
+            contribuição para o campo da ciência e tecnologia, além de
+            impulsionar sua carreira acadêmica.
+            <p>
+            <img src="{% static 'premiacao.png' %}">
+            </p>
+            
         </p>
+      </article>
+      <article>
+        <h1>Parabéns! João Luiz se torna membro do corpo docente da UENF</h1>
         <p>
-            Esta página contém o software de bioinformática estrutural desenvolvido pelo Laboratório de Química e Função de Proteínas e Peptídeos (LQFPP) na Universidade Estadual do Norte Fluminense (UENF). Este software é usado para determinar a estrutura de proteínas e analisar a interação com pequenos ligantes. Todo o software presente aqui é aberto ao público e pode ser utilizado gratuitamente pela comunidade acadêmica.
+            É com imenso orgulho que parabenizamos João Luiz, integrante do nosso
+            Laboratório de Química e Função de Proteínas e Peptídeos, por sua recente
+            nomeação como membro do corpo docente da Universidade Estadual do Norte
+            Fluminense (UENF). Sua dedicação à pesquisa e sua trajetória acadêmica
+            brilhante o tornaram uma referência em sua área, e sua nova posição na
+            UENF é um reflexo de seu comprometimento com o avanço científico.
+            
+            João Luiz agora leva consigo a excelência do nosso laboratório para o
+            corpo docente da universidade, e estamos confiantes de que ele
+            continuará a inspirar e contribuir de forma significativa para a
+            formação de novos talentos e o desenvolvimento de pesquisas
+            inovadoras. Parabéns, João!
+       
         </p>
+      </article>
+      <article>
+        <h1>Novos alunos do Laboratorio: Kaue, Pablo e Wanderson</h1>
+        <p>
+            É com grande satisfação que anunciamos a chegada de novos alunos
+            ao nosso Laboratório de Química e Função de Proteínas e Peptídeos:
+            Kaue, Pablo e Wanderson. Estamos entusiasmados em recebê-los e
+            acreditamos que suas contribuições serão valiosas para o
+            desenvolvimento de nossas pesquisas.
+            
+            Kaue traz consigo uma paixão pela bioquímica, enquanto Pablo
+            demonstra um forte interesse em técnicas de biologia molecular.
+            Wanderson, por sua vez, tem um histórico em modelagem
+            computacional, o que enriquecerá ainda mais nosso grupo.
+            
+            Estamos ansiosos para trabalhar juntos e explorar novas
+            possibilidades na área da ciência. Sejam bem-vindos, Kaue,
+            Pablo e Wanderson!
+             
+        
+        </p>
+        <button>Read more</button>
+      </article>
     </div>
+    <aside>
+      <h2><center>LQFPP</center></h2>
+      <p>
+        O Laboratório de Química e Função de Proteínas e Peptídeos
+        dedica-se ao estudo detalhado das propriedades químicas e
+        funcionais de proteínas e peptídeos. A pesquisa realizada neste
+        laboratório busca compreender como essas biomoléculas essenciais
+        se comportam em diferentes contextos biológicos, suas interações,
+        estruturas e os mecanismos pelos quais exercem suas funções.
+        
+        Utilizando técnicas avançadas de bioquímica, biologia molecular
+        e química de proteínas, o laboratório investiga processos como
+        a sinalização celular, catálise enzimática, regulação metabólica
+        e desenvolvimento de novas terapias baseadas em peptídeos e
+        proteínas.
+      </p>
+      
+    <div class="separator"></div>
+
+     
 
     <div class="separator"></div>
 
-    <div class="fim">
+    <!-- <div class="fim">  
         <ul>
             <li>Universidade Estadual do Norte Fluminense Darcy Ribeiro (UENF)</li>
             <li>Centro de Biociência e Biotecnologia (CBB)</li>
             <li>Laboratório de Química e Função de Proteínas e Peptídeos (LQFPP)</li>
             <li>Av. Alberto Lamego, 2000 - P5 - Parque Califórnia</li>
             <li>Campos dos Goytacazes, Rio de Janeiro - Brasil</li>
+            <li><img src="{% static 'uenf.png' %}" style="width: 100px; height: auto;"></li>
         </ul>
     </div>
-
+    -->
 </body>
 </html>
